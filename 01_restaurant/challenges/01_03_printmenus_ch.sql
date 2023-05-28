@@ -3,3 +3,10 @@
 -- Create a report with all the items sorted by price (lowest to highest).
 -- Create a report showing appetizers and beverages.
 -- Create a report with all items except beverages.
+select * from dishes order by price;
+select name,description,Price
+from dishes 
+where type in ('Beverage','Appetizer');
+select name,description,Price
+from Dishes
+where type is not 'Beverage';
